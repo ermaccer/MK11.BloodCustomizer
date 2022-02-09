@@ -9,10 +9,11 @@ struct FVector
 };
 
 class FName {
+private:
+	int Index;
+	int Number;
 public:
-
 };
-
 
 class BloodSettings {
 public:
@@ -23,6 +24,7 @@ public:
 
 extern BloodSettings settings;
 
-void SetColor(int64 ptr, FName name, FVector* color);
-
-
+class PlayerInfo {
+public:
+	void SetColor(FName color, FVector* value);
+};

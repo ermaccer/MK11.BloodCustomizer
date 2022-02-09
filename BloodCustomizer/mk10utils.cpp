@@ -1,4 +1,4 @@
-#include "..\pch.h"
+#include <Windows.h>
 #include "mk10utils.h"
 
 int64 GetMKXEntryPoint()
