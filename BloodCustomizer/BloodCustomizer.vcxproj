@@ -164,6 +164,7 @@
     <ClInclude Include="IniReader.h" />
     <ClInclude Include="MemoryMgr.h" />
     <ClInclude Include="mk10utils.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Trampoline.h" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +172,9 @@
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="IniReader.cpp" />
     <ClCompile Include="mk10utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BloodCustomizer.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
