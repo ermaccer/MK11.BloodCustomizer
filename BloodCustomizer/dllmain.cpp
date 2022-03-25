@@ -12,13 +12,13 @@ void Init()
     Trampoline* tramp = Trampoline::MakeTrampoline(GetModuleHandle(nullptr));
     settings.Init();
 
-    InjectHook(_addr(0x140E4DFCA), tramp->Jump(&PlayerInfo::SetColor));
-    InjectHook(_addr(0x140E4E00D), tramp->Jump(&PlayerInfo::SetColor));
+    InjectHook(_addr(0x140E4E33A), tramp->Jump(&PlayerInfo::SetColor));
+    InjectHook(_addr(0x140E4E37D), tramp->Jump(&PlayerInfo::SetColor));
 }
 
 bool ValidateGameVersion()
 {
-    char* gameName = (char*)_addr(0x142600D98);
+    char* gameName = (char*)_addr(0x142600EA8);
 
     if (strcmp(gameName, "Mortal Kombat 11") == 0)
         return true;
