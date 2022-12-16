@@ -19,5 +19,5 @@ void PlayerInfo::SetColor(FName color, FVector* value)
 	float blue = ((settings.B * 100.0f) / 255.0f) / 100.0f;
 
 	*value = { red, green, blue };
-	((void(__fastcall*)(PlayerInfo*, FName, FVector*))_addr(0x140E4E5B0))(this, color, value);
+	((void(__fastcall*)(PlayerInfo*, FName, FVector*))_addr(0x140E68020))(this, color, value);
 }
