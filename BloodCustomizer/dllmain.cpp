@@ -95,6 +95,7 @@ extern "C" PLUGIN_API void TabFunction()
 
     MK11HOOKSDK::ImGui_Separator();
     MK11HOOKSDK::ImGui_Text("Blood FX is reloaded on each match, not during gameplay.");
+    MK11HOOKSDK::ImGui_Separator();
     MK11HOOKSDK::ImGui_Text("Blood Color (Alpha is ignored)");
     if (MK11HOOKSDK::ImGui_ColorEdit4("Pick RGB", settings.m_fColors))
     {
