@@ -71,7 +71,7 @@ BEGIN
             VALUE "FileDescription", "Change blood color."
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "BloodCustomizer.dll"
-            VALUE "LegalCopyright", "Copyright (C) 2022"
+            VALUE "LegalCopyright", "Copyright (C) 2026"
             VALUE "OriginalFilename", "BloodCustomizer.dll"
             VALUE "ProductName", "BloodCustomizer"
             VALUE "ProductVersion", "1.0.0.1"

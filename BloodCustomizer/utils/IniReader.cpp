@@ -1,4 +1,4 @@
-#include "framework.h"
+#include "..\framework.h"
 #include "IniReader.h"
 #include <iostream>
 #include <Windows.h>

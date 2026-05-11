@@ -1,5 +1,5 @@
 #pragma once
-#include "mk10utils.h"
+#include "utils/addr.h"
 
 struct FVector
 {
@@ -19,12 +19,19 @@ class BloodSettings {
 public:
 	int R, G, B;
 
+	bool m_bEnable;
+	int  m_colors[3];
+	float m_fColors[4] = {};
+
 	void Init();
+	void Save();
 };
 
 extern BloodSettings settings;
 
-class PlayerInfo {
+class PlayerInfoEx {
 public:
 	void SetColor(FName color, FVector* value);
 };
+
+extern int64 pSetColor;
