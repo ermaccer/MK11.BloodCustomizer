@@ -40,7 +40,7 @@ bool ValidateGameVersion()
 
     return true;
 }
-
+#ifdef HOOKPLUGIN
 // Plugin name to use when loading and printing errors to log
 extern "C" PLUGIN_API const char* GetPluginName()
 {
@@ -111,6 +111,7 @@ extern "C" PLUGIN_API void TabFunction()
 
 }
 
+#endif
 
 
 BOOL APIENTRY DllMain( HMODULE hModule,
